@@ -1,0 +1,10 @@
+figure, plot(x, y2, 'o', 'Color', 'black', 'LineWidth', 2);
+grid on;
+hold on;
+title('');
+xlabel('');
+ylabel('');
+fit = polyfit(x, y2, 2);
+g = polyval(fit, x);
+plot(x, g, '-', 'Color', 'green', 'LineWidth', 2);
+hold off;
